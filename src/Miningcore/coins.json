@@ -4338,5 +4338,220 @@
         "explorerBlockLink": "https://explorer.ergoplatform.com/en/blocks/$hash$",
         "explorerTxLink": "https://explorer.ergoplatform.com/en/transactions/{0}",
         "explorerAccountLink": "https://explorer.ergoplatform.com/en/addresses/{0}"
+    },
+    "bellscoin": {
+        "name": "Bellscoin",
+        "canonicalName": "Bellscoin",
+        "symbol": "BEL",
+        "family": "bitcoin",
+        "website": "https://bellscoin.com/",
+        "market": "",
+        "twitter": "",
+        "telegram": "",
+        "discord": "",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "scrypt",
+            "args": [
+                1024,
+                1
+            ]
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [
+                {
+                    "hash": "sha256d"
+                }
+            ]
+        },
+        "posBlockHasher": {
+            "hash": "reverse",
+            "args": [
+                {
+                    "hash": "scrypt",
+                    "args": [
+                        1024,
+                        1
+                    ]
+                }
+            ]
+        },
+        "blockTime": 60,
+        "peerMagic": "c0c0c0c0",
+        "isProofOfStake": false,
+        "shareMultiplier": 65536,
+        "note": "Assumed Dogecoin-like params; verify peerMagic",
+        "explorerBlockLink": "https://explorer.bellscoin.com/block/$height$",
+        "explorerTxLink": "https://explorer.bellscoin.com/tx/{0}",
+        "explorerAccountLink": "https://explorer.bellscoin.com/address/{0}"
+    },
+    "luckycoin": {
+        "name": "Luckycoin",
+        "canonicalName": "Luckycoin",
+        "symbol": "LKY",
+        "family": "bitcoin",
+        "website": "http://luckycoin.info/",
+        "market": "",
+        "twitter": "",
+        "telegram": "",
+        "discord": "",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "scrypt",
+            "args": [
+                1024,
+                1
+            ]
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [
+                {
+                    "hash": "sha256d"
+                }
+            ]
+        },
+        "blockTime": 60,
+        "peerMagic": "fbb4d9f9",
+        "isProofOfStake": false,
+        "shareMultiplier": 65536,
+        "note": "Litecoin fork with super blocks",
+        "explorerBlockLink": "https://explorer.luckycoin.org/block/$height$",
+        "explorerTxLink": "https://explorer.luckycoin.org/tx/{0}",
+        "explorerAccountLink": "https://explorer.luckycoin.org/address/{0}"
+    },
+    "pepecoin": {
+        "name": "Pepecoin",
+        "canonicalName": "Pepecoin",
+        "symbol": "PEP",
+        "family": "bitcoin",
+        "website": "https://pepecoin.org/",
+        "market": "",
+        "twitter": "",
+        "telegram": "",
+        "discord": "",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "scrypt",
+            "args": [
+                1024,
+                1
+            ]
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [
+                {
+                    "hash": "sha256d"
+                }
+            ]
+        },
+        "blockTime": 60,
+        "peerMagic": "c0c0c0c0",
+        "isProofOfStake": false,
+        "shareMultiplier": 65536,
+        "coinbaseIgnoreAuxFlags": true,
+        "note": "Dogecoin fork, merge-mineable with LTC/DOGE",
+        "explorerBlockLink": "https://explorer.pepecoin.org/block/$height$",
+        "explorerTxLink": "https://explorer.pepecoin.org/tx/{0}",
+        "explorerAccountLink": "https://explorer.pepecoin.org/address/{0}"
+    },
+    "fractalbitcoin": {
+        "name": "Fractal Bitcoin",
+        "canonicalName": "fractalbitcoin",
+        "symbol": "FB",
+        "family": "bitcoin",
+        "website": "https://fractalbitcoin.io/",
+        "market": "",
+        "twitter": "https://twitter.com/fractal_bitcoin",
+        "telegram": "https://t.me/FractalBitcoinOfficial",
+        "discord": "",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "sha256d"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [
+                {
+                    "hash": "sha256d"
+                }
+            ]
+        },
+        "blockTime": 30,
+        "peerMagic": "f9beb4d9",
+        "isProofOfStake": false,
+        "shareMultiplier": 256,
+        "note": "Bitcoin scaling layer; block time faster than BTC",
+        "explorerBlockLink": "https://explorer.fractalbitcoin.io/block/$height$",
+        "explorerTxLink": "https://explorer.fractalbitcoin.io/tx/{0}",
+        "explorerAccountLink": "https://explorer.fractalbitcoin.io/address/{0}"
+    },
+    "bitcoin-classic": {
+        "name": "BitcoinXBT",
+        "canonicalName": "bitcoin-classic",
+        "symbol": "XBT",
+        "family": "bitcoin",
+        "website": "https://xbtclassic.com/",
+        "market": "https://mecacex.com/market/XBTUSDT",
+        "twitter": "https://x.com/xbtproject",
+        "telegram": "",
+        "discord": "",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "sha256d"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [
+                {
+                    "hash": "sha256d"
+                }
+            ]
+        },
+        "coinbaseIgnoreAuxFlags": true,
+        "explorerBlockLink": "https://xbt-explorer.s3na.xyz/block/$hash$",
+        "explorerTxLink": "https://xbt-explorer.s3na.xyz/tx/{0}",
+        "explorerAccountLink": "https://xbt-explorer.s3na.xyz/address/{0}"
+    },
+    "bitcoin-atom": {
+    "name": "BitcoinAtom",
+    "canonicalName": "bitcoin-atom",
+    "symbol": "BCA",
+    "family": "bitcoin",
+    "website": "https://bitcoinatom.io/",
+    "market": "https://example.com/market/BCAUSDT",
+    "twitter": "https://x.com/BitcoinAtom",
+    "telegram": "https://t.me/bitcoinatom",
+    "discord": "",
+    "coinbaseHasher": {
+        "hash": "sha256d"
+    },
+    "headerHasher": {
+        "hash": "sha256d"
+    },
+    "blockHasher": {
+        "hash": "reverse",
+        "args": [
+            {
+                "hash": "sha256d"
+            }
+        ]
+    },
+    "coinbaseIgnoreAuxFlags": true,
+    "explorerBlockLink": "https://explorer.bitcoinatom.io/block/$hash$",
+    "explorerTxLink": "https://explorer.bitcoinatom.io/tx/{0}",
+    "explorerAccountLink": "https://explorer.bitcoinatom.io/address/{0}"
     }
 }
