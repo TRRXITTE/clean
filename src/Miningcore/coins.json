@@ -4553,5 +4553,34 @@
     "explorerBlockLink": "https://explorer.bitcoinatom.io/block/$hash$",
     "explorerTxLink": "https://explorer.bitcoinatom.io/tx/{0}",
     "explorerAccountLink": "https://explorer.bitcoinatom.io/address/{0}"
+    },
+    "trrxitte-btc": {
+        "name": "TRRXITTE BTC",
+        "canonicalName": "trrxitte-btc",
+        "symbol": "TRRXITTE",
+        "family": "bitcoin",
+        "website": "https://btc.trrxitte.com/",
+        "market": "",
+        "twitter": "",
+        "telegram": "",
+        "discord": "",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "sha256d"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [
+                {
+                    "hash": "sha256d"
+                }
+            ]
+        },
+        "coinbaseIgnoreAuxFlags": true,
+        "explorerBlockLink": "",
+        "explorerTxLink": "",
+        "explorerAccountLink": ""
     }
 }
